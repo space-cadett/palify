@@ -1,0 +1,93 @@
+body{
+    margin: 0;
+    background: #e8ecf3;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'IsabellaSansRegular';
+    font-weight: normal;
+    font-style: normal;
+    padding: 0 2rem;
+}
+
+.pallete button {
+    outline: none;
+    border: none;
+    padding: 0.7rem 2rem;
+    font-size: 1.1rem;
+    position: absolute;
+    top: -1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2rem;
+    background: #1b1a1a;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.pallete button:hover {
+    background: #fff;
+    color: #0a0a0a;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pallete {
+    position: relative;
+    background: #fff;
+    width: 45rem;
+    height: 25rem;
+    border-radius: 20px;
+    box-shadow: 0px 25px 50px -12px rgbs(0, 0 , 0 , 0.1);
+    text-align: center;
+    color: #1d1c1c;
+    padding-top: 5rem;
+    box-sizing: border-box;
+}
+
+.colors {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-y: hidden;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.colors > div {
+    width: 25%;
+}
+
+.color {
+    background: #2b2d42;
+    height: 17em;
+    width: 100%;
+}
+
+.colors h4 {
+    font-size: 0.9rem;
+}
+
+.fade-in{
+    opacity: 0;
+    animation: fadeIn 0.4s ease-in;
+}
+
+@media screen and (max-width: 500px){
+    body {padding: 2rem;}
+    .pallete{height: initial;}
+    .colors{flex-direction: column;} 
+    .colors > div { width: 100%;} 
+}
+
+@keyframes fadeIn {
+    to {opacity: 1;}
+}
+
+.builder{
+    padding-top: 5rem;
+
+}
